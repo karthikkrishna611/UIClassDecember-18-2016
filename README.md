@@ -77,5 +77,13 @@ Just trying to make some changes
 hii 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+hi source tree!!
+
+>>>>>>> 26d2c85dba481f048aaf2003b144778c5ff7ae59
 hello sublime
 
