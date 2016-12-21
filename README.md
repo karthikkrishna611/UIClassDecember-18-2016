@@ -6,7 +6,9 @@ hie ever
 Useful for github demo
 
 
+ 
 hii every one
+
 
 
 
@@ -14,6 +16,9 @@ hii every one
 hi everyone
 introduction about clone
 commit
+
+
+
 
 
 
@@ -42,7 +47,26 @@ hello sublime
 
 hey!!
 
+>>>>>>> 1fb0222b267799a3dd22c2743441b3ff1ad9c580
 hi everyone
+introduction about clone
+commit
+
+
+
+data is cloned
+
+
+hi everyone
+This is all about how to clone and edit the file and push it to repo
+
+Hi everyone - Jhansi
+
+
+
+hello world
+
+
 This is all about how to clone and edit the file and push it to repo
 
 
@@ -93,6 +117,8 @@ Just trying to make some changes
 
 hii 
 
+topics about sublime text3 and github
+
 
 
 
@@ -101,7 +127,9 @@ hii
 hi source tree!!
 
 
-hello sublime
+hello sublime 
+hello sublime and github
+
 
 
 atlast... i got it
