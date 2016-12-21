@@ -25,14 +25,17 @@ commit
 
 hi everyone
 introduction about clone
-commit
-
-
-
-
+comm
 
 
 data is cloned
+
+
+hi everyone
+This is all about how to clone and edit the file and push it to repo
+
+hello sublime
+
 
 
 hey!!
@@ -53,7 +56,13 @@ hello world
 
 This is all about how to clone and edit the file and push it to repo
 
+
 Hello everyone this is ravi
+
+
+
+
+hello..!!!
 
 
 HEAD
@@ -69,3 +78,4 @@ hi prasad here, i guess i fixed it.
 
 Just trying to make some changes
 hii 
+hello sublime
