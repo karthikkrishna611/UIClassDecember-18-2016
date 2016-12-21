@@ -1,5 +1,10 @@
 # UIClassDecember-18-2016
+
+Useful for github
+
+hie ever
 Useful for github demo
+
 
 
 
@@ -8,7 +13,10 @@ introduction about clone
 commit
 
 
- HEAD
+
+
+
+
 hi everyone
 introduction about clone
 commit
@@ -40,5 +48,12 @@ HEAD
 
 
 hello..!!!
+
+
+
+solved merge conflicts
+
+hi prasad here, i guess i fixed it.
+
 Just trying to make some changes
 
