@@ -1,10 +1,9 @@
 # UIClassDecember-18-2016
 Useful for github demo
-<<<<<<< HEAD
+
 hi everyone
 introduction about clone
 commit
-=======
 
 
 
@@ -25,4 +24,5 @@ Hello everyone this is ravi
 
 hello..!!!
 
->>>>>>> 4ad8f924341e6ea74a8e16d7c1125bcf5ea50f02
+Deleted merges
+
