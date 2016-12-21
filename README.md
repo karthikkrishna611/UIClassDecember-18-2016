@@ -61,6 +61,12 @@ This is all about how to clone and edit the file and push it to repo
 
 Hello everyone this is ravi
 
+hello.
+welcome
+
+sri
+
+
 
 
 
@@ -97,4 +103,6 @@ hi source tree!!
 
 hello sublime
 
+
 atlast... i got it
+
