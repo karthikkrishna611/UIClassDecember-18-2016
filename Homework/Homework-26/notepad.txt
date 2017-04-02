@@ -1,0 +1,50 @@
+Homework-26
+1.	Pass by value vs pass by reference? Deep compare, shallow compare, deep comparison, shallow comparison, array.slice, array.copywithin?
+The main difference is when we pass by reference we are handing in our only copy of the variable, and the function directly modifies that variable, whereas when we pass by value we have another variable that points at the other variable, so basically two copies of the same variable, and only the copy is modified leaving our original unchanged.
+shallowCompare performs a shallow equality check on the current props and nextProps objects as well as the current state and nextState objects.
+shallowCompare returns true if the shallow comparison for props or state fails and therefore the component should update.
+shallowCompare returns false if the shallow comparison for props and state both pass and therefore the component does not need to update.
+The array.slice() method returns a shallow copy of a portion of an array into a new array object selected from begin to end. The original array will not be modified.
+Syntax: arr.slice()
+              arr.slice(begin)
+              arr.slice(begin, end)
+The copyWithin() method shallow copies part of an array to another location in the same array and returns it, without modifying its size.
+Syntax:  arr.copyWithin(target)
+arr.copyWithin(target, start)
+arr.copyWithin(target, start, end)
+
+2.	What is mvvm and databinding in angularjs?
+Mvvm means model view view model. It holds the data in the memory and show the data in webpage. Between the viewmodel the data will be synchronized.
+Databinding is the synchronization between the model and view. it data model is collection of data available for application.
+the ng-model directive to bind data from the model to the view on HTML controls.
+<input ng-model="firstname">
+
+3.	Difference between factory and service?
+.service() is a method on our module that takes a name and a function that defines the service.
+app.controller('AppController', function (MyService) {
+  MyService.sayHello(); // logs 'hello'
+});
+.factory() is a method on our module and it also takes a name and a function, that defines the factory.
+var mainApp = angular.module("mainApp", []);
+mainApp.factory('MathService', function() {
+   var factory = {};
+   factory.multiply = function(a, b) {
+      return a * b
+   }
+   return factory;
+});
+4.	When to use factory and service?
+The service is an object or a function that is available for limited to in our angularJs.
+AngularJS has about 30 built-in services. One of them is the $location service.
+AngularJS constantly supervises the application, and for it to handle changes and events properly, AngularJS prefers to use the $location service instead of the window.location object.
+The $http service makes a request to the server, it handle the response of the application.
+.factory() is a method on our module and it also takes a name and a function, that defines the factory. However, a factory function is just a function that gets called, which it is return an object explicitly.
+5.	Difference between mvvm and mvc?
+Mvvm means model view view model. It holds the data in the memory and show the data in webpage. Between the viewmodel the data will be synchronized.
+MVC is model view controller. Child scope will inherit from parent’s scope, any model defined in the controller is only valid in the current controller. It will passes only to the child scope not to the parent scope. It can define the action which can be triggered and also we can have one controller within the other.
+Syntax: modulename.controller(‘ctrlname’,function($scope)){
+}
+
+6.	What are promises? Why do we use them?
+A promise is said to be fulfilled when we get a result from that action, we get a response regardless of whether the response is good or bad. A promise is said to be rejected when we don’t get a response. We need promises because we need to make decisions based on the possible results of our call.
+

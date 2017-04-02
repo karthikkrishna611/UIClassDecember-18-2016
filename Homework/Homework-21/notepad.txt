@@ -1,0 +1,47 @@
+Homework 21
+1.	What is element.addeventlistner(event, captureflag, eventhandler) in javascript?
+             The addEventListener() method attaches an event handler to the specified element. It can attach the element without overwriting the existing event handlers. This events is easier to control the events in bubbling. When using the addEventListener() method, the JavaScript is separated from the HTML markup, for better readability and allows you to add event listeners even when you do not control the HTML markup.
+element.addEventListener(event, function, useCapture);
+The first parameter is the type of the event (like "click" or "mousedown").
+The second parameter is the function we want to call when the event occurs.
+The third parameter is a boolean value specifying whether to use event bubbling or event capturing. This parameter is optional.
+
+2.	What is a selector in javascript?
+jQuery selectors are used to "find" (or select) HTML elements based on their name, id, classes, types, attributes, values of attributes and much more.
+Selector              example                                description
+*	                $("*")	                               All elements
+#id	            $("#lastname")	                The element with id="lastname"
+.class	           $(".intro")	                  All elements with class="intro"
+.class,.class	$(".intro,.demo")	   All elements with the class "intro" or "demo"
+element	$("p")	                                All <p> elements
+el1,el2,el3	$("h1,div,p")	                 All <h1>, <div> and <p> elements
+there are many selectors which are used In jquery.
+
+3.	What is id, class, tagname?
+By using id, class, tagname we can find the elements.
+Id:                    document.getElementById(id_string)
+Elements are recognized by this id selector.
+Class: by using class attribute we can find the elements in which class are there.
+              document.getElementsByClassName("class_values")
+tagName:  we can get elements by using tagName.
+                    document.getElementsByTagName(tag_name)
+
+4.	Document.getelementbyid, document.getelementbyclassname, document.getelementbytagname, document.queryselectorall ?
+document.getElementById(id) : we can find the elements by specified id. Returns null if no elements with the specified ID exists.
+document.getElementsByClassName(): it return the elements which are descendants to a specified root elements within the class.
+document.getelementbytagname(): Returns an elements with the given tag name. The complete document is searched, including the root node.
+document.querySelectorAll(): Returns a list of the elements within the document (using depth-first pre-order traversal of the document's nodes) that match the specified group of selectors.
+elementList = document.querySelectorAll(selectors);
+
+5.	Event propogation?
+Event propogation is the sysnonym of event bubbling. It includes event capturing also but all browsers will not accept.
+6.	Event bubbling and event capturing?
+Event bubbling is descendent(child) event handler will invoked first and then ancestor(parent) event handler will invoked second.
+   .addEventListener(event, handler, captureFlag)
+CaptureFlag will return false or undefined.
+Event capturing: it is opposite to the event bubbling, like the ancestor event handler will invoked first then descendent event handler will invoked.
+   .addEventListener(event, handler, captureFlag)
+CaptureFlag returns true.
+
+7.	What is event.stoppropohgation vs event.immediatestoppropogation in javascript?
+stopPropagation will prevent any parent handlers from being executed stopImmediatePropagation will prevent any parent handlers and any other handlers from executing. Use event.isImmediatePropagationStopped() to know whether this method was ever called.

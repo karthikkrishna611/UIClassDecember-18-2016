@@ -1,0 +1,46 @@
+1.	what is object.defineProperty? and all possible configuration options? Description?
+The Object.defineProperty() method defines a new property on an object and it also modifies an existing property on an object, and returns the object.
+Object.defineProperty(obj, prop, descriptor)
+Prop: tha name of the object to be modified or defined.
+Obj: object name.
+Descriptor: it is for the property to defined or modified.
+
+2.	What is object.create, object.keys?
+object.create: it creates a new object with specified properties.
+Object.create(proto[, propertiesObject])
+Returns a new object.
+object.keys: it returns an array with specified property in the same order provided in for in loop.
+Object.keys(obj);
+
+3.	Can we create object from functions?
+By using this keyword, we can create an object from functions.
+function Apple (type) {
+    this.type = type;
+    this.color = "red";
+    this.getInfo = getAppleInfo;
+}
+function getAppleInfo() {
+    return this.color + ' ' + this.type + ' apple';
+}
+4.	What is a prototype?
+The prototype is also an object. All JavaScript objects inherit their properties and methods from their prototype. Objects created with new Date() inherit the Date.prototype.
+5.	What is this keyword and its significance?
+The this keyword in an object constructor does not have a value. It is only a substitute for the new object. The value of this will become the new object when the constructor is used to create an object.
+this.a = 37;
+console.log(window.a);
+6.	What is window?
+The window object is supported by all browsers. It represents the browser's window.
+Global variables are properties of the window object.
+Global functions are methods of the window object.
+window.document.getElementById("header");
+7.	Also look into functions? What is a callback function?
+Function is a keyword in which it consists of block of code which is to be executed.
+function name(parameter1, parameter2, parameter3) {
+    code to be executed
+}
+A callback is declared by using ctypes.FunctionType. The first argument is the calling convention, the second argument is the return type, and the third is an array of arguments the callback expects.
+
+The return type of the javascript callback must match the return type declared, otherwise js-ctypes will throw an error saying "unexpected return type".
+function myJSCallback(cInt, cPtr) {
+    return true; // 
+}

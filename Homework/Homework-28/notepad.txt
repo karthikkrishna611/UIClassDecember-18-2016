@@ -1,0 +1,21 @@
+Homework-28
+
+1.	What is multiple views in ui.router?
+UI-Router allows multiple views for a single state. This can be useful to define a layout with named sections. UI-Router supports multiple views and each can have its own corresponding Controller so that each of these regions can be encapsulated and reused throughout the application if needed.
+2.	What is nested views in ui.router?
+Nested views are used when the application is in a state—when a state is "active"—all its ancestor states are implicitly active as well. Child states will load their templates into their parent's ui-view.
+3.	What are nested routes?
+The first nested route to generate will be the index route. An index nested route works similarly to the base index route. It is the default route that renders when no route is provided.
+4.	Diff between ngroute and ui.router?
+The ngRoute module routes the application to different pages without reloading the entire application. when ngRoute is used, route is configured with $routeProvider. However, when used with ui-router, route is configured with $stateProvider and $urlRouterProvider.
+ui-router allows for nested views and multiple named views. This is very useful with larger app where you may have pages that inherit from other sections.
+
+5.	What is state in ngRoute?
+The ngRoute module provides routing and deeplinking services and directives for AngularJS apps.
+angular.module('app', ['ngRoute'])
+6.	What is node.js? why do we use it?
+Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.
+7.	What is callback? what is asynchronous?
+callbacks are usually synchronous. it means that code execution will block (or wait) for the API call to return before continuing. This means that until a response is returned by the API, your application will not execute any further, which could be perceived by the user as latency or performance lag in your app.
+Asynchronous calls do not block (or wait) for the API call to return from the server. Execution continues in your program, and when the call returns from the server, a "callback" function is executed.
+

@@ -1,0 +1,84 @@
+Explain with examples:
+1.	Array methods 
+1) toString(): Converts an array to a string of array values.
+Example: var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+2) join(): joins all array elements into a string with separator in between.
+Example: var fruits = ["Banana", "Orange","Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.join(" * ");
+3) pop(): removes the last element from an array
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.pop(); 
+4) push(): adds a new element to an array.
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Kiwi");
+5) shift(): first array element and "shifts" all other elements to a lower index.
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.shift();
+6) unshift(): method adds a new element to an array (at the beginning), and "unshifts" older elements.
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.unshift("Lemon");
+7) splice(): method can be used to add new items to an array
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 0, "Lemon", "Kiwi");
+Use splice to remove elements in an array
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(0, 1); 
+8) concat(): method creates a new array by concatenating two arrays
+var myGirls = ["Cecilie", "Lone"];
+var myBoys = ["Emil", "Tobias","Linus"];
+var myChildren = myGirls.concat(myBoys); 
+9) slice(): method slices out a piece of an array into a new array
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+var citrus = fruits.slice(1);
+10) tostring(): convert an array to a string 
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+
+2.	What are different ways to create objects?
+a) Using the Object() constructor:
+	     var d = new Object();
+
+b) Using Object.create() method:
+	     var a = Object.create(null);
+
+c) Using the bracket's syntactig sugar:
+var b = {};
+	
+d) Using a function constructor
+var Obj = function(name) {
+  this.name = name
+}
+var c = new Obj("hello");
+
+3.	What are properties in object?
+Properties are the values associated with a JavaScript object.
+A JavaScript object is a collection of unordered properties.
+Properties can usually be changed, added, and deleted, but some are read only.
+The syntax for accessing the property of an object is:
+objectName.property  
+4.	How to retrieve A property value in object?
+The Object.values() method returns an array of a given object's own enumerable property values, in the same order as that provided by a for...in loop.
+Object.values(obj);
+The object whose property values are to be returned.
+5.	How to add a property into object?
+Add new properties to an existing object by giving it a value.
+person.nationality = "English";
+6.	How to remove a property in object?
+delete keyword deletes both the value of the property and the property itself. After deleting we can’t use that property again.
+var person = {
+    firstname:"John", //property
+    lastname:"Doe",  //property
+    age:50,	      //property
+    eyecolor:"blue"  //property
+}; delete person.age;
+7.	How to update a property value in object?
+updateObject = {
+    myObject : {
+        attribute2 : "hello world"
+    }
+};
+8.	How to check if a property exists within an object?
+The hasOwnProperty() method returns a boolean indicating whether the object has the specified property or not. Returns true if the object has property or else return false.
+obj.hasOwnProperty(prop);
+

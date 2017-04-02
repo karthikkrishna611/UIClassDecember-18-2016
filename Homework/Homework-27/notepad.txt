@@ -1,0 +1,43 @@
+Homework-27
+1.	Implement get, post, put and delete http methods using $http?
+The HTTP GET method is used to read a representation of a resource. GET returns a representation in XML or JSON and an HTTP response code.
+The POST verb is most-often utilized to create new resources. when creating a new resource, POST to the parent and the service takes care of associating the new resource with the parent, assigning an ID (new resource URI), etc.
+PUT can also be used to create a resource in the case where the resource ID is chosen by the client instead of by the server.
+It is used to delete a resource identified by a URI. Return HTTP status 200 (OK) along with a response.
+ 
+2.	What is asynchronous programming in javascript? Why do we need to use it?
+Asynchronous programming keeps web applications responsive by allowing multiple tasks to be processed at the same time. long-running JavaScript functions can make the UI or server unresponsive until the function has returned.
+loadTweetsAsync(function () {
+    // ... Wait
+    // ... Do something with the tweets
+});
+doSomeOtherImportantThings();
+
+3.	SetTimeout() and how it is used?
+The setTimeout() method calls a function or evaluates an expression after a specified number of milliseconds. The function is executed only one time.
+setTimeout(function, milliseconds, param1, param2, ...)
+return a number value representing the ID value of the timer that is set.
+Ex: setTimeout(function(){ alert("hi"); }, 5000);
+Displays an alert box after 3 seconds.
+
+4.	What is $q and how to use it?
+$q service to deal with promises which allow to work with asynchronous functions and user their return values when the execution has been completed. It also allows to write the custom promises also.
+var deferred = $q.defer();
+// deferred contains the promise to be returned
+// to resolve a promise use .resolve
+deferred.resolve(data);
+// to reject a promise use .reject
+deferred.reject(error);
+
+5.	What are promises and how to use it?
+A promise is said to be fulfilled when we get a result from that action, we get a response regardless of whether the response is good or bad. A promise is said to be rejected when we don’t get a response. We need promises because we need to make decisions based on the possible results of our call.
+
+6.	What are directives?
+Angularjs extend HTML with new attributes called Directives.
+ng-app directive initializes an AngularJS application. it defines the root element of an AngularJS application.
+ng-init directive initializes application data.
+ng-model directive binds the value of HTML controls (input, select, textarea) to application data.
+New directives are created by using the .directive function.
+
+
+

@@ -1,0 +1,50 @@
+Homework-22
+1.	DOM properties and methods?
+The HTML DOM is a standard object model and programming interface for HTML. It defines:
+The HTML elements as objects
+The properties of all HTML elements
+The methods to access all HTML elements
+The events for all HTML elements
+A property is a value that can change the content of html elements.
+A method is an action can do to the html elements.
+The getElementById Method
+The most common way to access an HTML element is to use the id of the element.
+The innerHTML Property
+The easiest way to get the content of an element is by using the innerHTML property.
+The innerHTML property is useful for getting or replacing the content of HTML elements.
+
+2.	BOM(browser object model)?
+BOM allows the javascript to talk with the browser
+The window object is supported by all browsers. It represents the browser's window. All global JavaScript objects, functions, and variables automatically become members of the window object.
+window.document.getElementById("header");
+it works same as the document.getelementbyid().
+Some other methods:
+window.open() - open a new window
+window.close() - close the current window
+window.moveTo() -move the current window
+window.resizeTo() -resize the current window
+window.screen object contains the information of the users screen. Window.screen can have 
+screen.width : shows the width of the screen.
+screen.height: shows height of the screen.
+screen.availWidth: available width of the screen. minus interface features like the Windows Taskbar.
+screen.availHeight: available height of the screen.
+screen.colorDepth: returns the number of bits used to display one color.
+screen.pixelDepth: returns the pixel depth of the screen.
+
+3.	AJAX in javascript?
+Ajax means asynchronous javascript and xml. It is not a programming language. by using ajax we can update a page without reloading it and we can request and receive the server after the page is loaded.  We can create a request by XMLHTTPRequestobject and send HTTPRequest to the server, it will process and give the response to the browser. The browser will get the response and returned the data using javascript then the page will be updated.
+ 
+4.	What is jquery?
+JQuery is the library of javascript. JQuery make more simple and easier way of using javascript on website. jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.
+5.	Can jquery do some work? What javascript cannot do?
+jQuery simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation. There are lots of other JavaScript frameworks there, but jQuery seems to be the most popular and extendable. Jquery make more simple than the javascript so that many of them areincluding jquery also.
+
+6.	What is $ in jquery?
+$(selector).action()
+$ is the sign to access the jquery. A selector is a query to find the html elements. Action is performed on the elements.
+$("p").hide() - hides all <p> elements.
+
+7.	Differences between jquery versions 1.x vs 2.x vs 3.x?
+Versions of 2.x leave behind the older Internet Explorer 6, 7, and 8 browsers. 
+In return they are smaller, faster
+The jQuery team still supports the 1.x branch which does run on IE 6/7/8. Both the 1.x and 2.x versions of jQuery have the same public APIs, even though they differ somewhat in their internal implementations. If you need support for the widest variety of browsers including IE8, Opera 12, Safari 5, and the like, use the jQuery-Compat 3.0.0 package. We recommend this version for most web sites, since it provides the best compatibility for all website visitors.

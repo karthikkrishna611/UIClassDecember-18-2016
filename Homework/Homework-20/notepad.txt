@@ -1,0 +1,53 @@
+Homework-20
+1.	What is IIFE? Why do we need to use?
+Immediately invoked function expression 
+(function() {
+       // this is iife
+}) ();
+It invoked when it is interrupted. We can’t invoke IIFE second time.
+2.	What is namespacing in javascript? Why do we use it?
+To avoid collisions with the objects or variables in the global namespace we use a technique called namespacing. to safeguard the code from breaking in the event of another script on the page using the same variable or method names we will use namespacing technique.
+Single global variables
+var myApplication =  (function(){
+        function(){
+            /*...*/
+        },
+        return{
+            /*...*/
+        }
+})();  
+3.	What is module pattern?
+               Module pattern is javascript coding pattern in which if we don’t want to use globals but we want to declare them by using the return values.
+var MODULE = (function () {
+	var my = {},
+	privateVariable = 1;
+               function privateMethod() {
+		// ...}
+               my.moduleProperty = 1;
+	my.moduleMethod = function () {
+                // ...
+	};
+           return my;
+             }());
+declared a global module named module with the methods named module.
+4.	Is it good practice to have too many global variables or functions? why if yes? Why if no?
+Global variables can significantly increase coupling, significantly reduces the scalability and testability of your code. Once start using globals, we must know where and how the variable is modified. The performance is the least of concerns when using globals. Global variables take long time to find the local variables so it is time taking process. Sometime we forgot to declare the local variables while using the global so it takes time to declare again.
+
+5.	What are html dom events?
+Html dom events allows javascript to event handlers on elements in html document. There are many dom events available like mouse events, print events, keyboard events, frame events, form events, drag events, clipboard events, media events, animation events, transition events, misc events, server-sent events, touch events, event objects, methods. For each html dom events and methods there are different actions in which we can apply in javascript.
+6.	What is event listener in javascript? How can we configure them?
+addEventListener() method:
+using the addEventListener() method, the JavaScript is separated from the HTML markup, for better readability and allows you to add event listeners even when you do not control the HTML markup. We can add and remove event listener easily in javascript by using addEventListener() and removeEventListener() methods.
+element.addEventListener(event, function, useCapture)
+we can add many event handlers to the elements.  
+
+7.	What is event handler?
+When the user clicks on html document then we can say that the event occurs and javascript is executed. We can assign events by using html dom.
+onclick=JavaScript
+The onchange event is often used in combination with validation of input fields.
+<input type="text" id="fname" onchange="upperCase()">
+More events like onmouse, onload, onfocus which we can use in javascript.
+
+8.	What is event propogation?
+events are handled at higher levels first, then sink down to individual elements at lower levels known as event propogation. It is synonym of event bubbling; it includes event capturing also. Event capturing is not supported by all browsers and rarely used.
+<BODY onclick="handleBODY()" ...>
